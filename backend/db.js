@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('<your db link>', err => {
+mongoose.connect('mongodb://localhost:27017/meanDB', err => {
     if(!err){
         console.log('DB Connection Sucessful');
     } else {
